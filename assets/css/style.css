@@ -153,9 +153,16 @@ h3 {
   display: block;
   visibility: hidden;
 }
+.godownplease {
+  margin-bottom: 400px;
+}
+.portfoliocontainer {
+  display: row;
+
+}
 #portfolio {
-  margin-top: 200px;
-  margin-bottom: 350px;
+  margin-top: 300px;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: row;
 }
@@ -166,6 +173,51 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#carousel,
+.carousel-image {
+  width: 400px;
+  height: 400px;
+}
+
+#carousel {
+  position: relative;
+  overflow: hidden;
+  margin-left: 80px;
+}
+#carousel-image-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0px;
+  transition: 0.5s all;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#button-next,
+#button-previous {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 @keyframes DripDown {
   0% { top: -500px; }
