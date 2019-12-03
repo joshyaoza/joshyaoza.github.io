@@ -1,0 +1,185 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+	background: #F7D9AC;
+	font-family: 'Montserrat', sans-serif;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  color: white;
+}
+
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  color: white;
+
+}
+#redpaint {
+  position: fixed;
+  left: 990px;
+  top: 0px;
+  animation-name: DripDown;
+  animation-duration: 0.5s;
+
+}
+#yellowpaint {
+  position: fixed;
+  left: 1155px;
+  top: 0px;
+  animation-name: DripDown;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+#greenpaint {
+  position: fixed;
+  left: 1318px;
+  top: 0px;
+  animation-name: DripDown;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+#paintbrush {
+  position: fixed;
+  left: 1050px;
+  bottom: 0px;
+  animation-name: MoveUp;
+  animation-duration: 0.5s;
+}
+#marker {
+  position: fixed;
+  left: 1185px;
+  bottom: 0px;
+  animation-name: MoveUp2;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+#pencil {
+  position: fixed;
+  left: 1337px;
+  bottom: 0px;
+  animation-name: MoveUp3;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  font-weight: 300;
+  font-size: 12px;
+  color: black;
+  margin-right: 30px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.navbaritems {
+  display: flex;
+  flex-direction: row;
+}
+#aboutmelink, #portfoliolink, #resumelink {
+  font-size: 20px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+.introtext {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#social-media {
+  display: flex;
+  flex-direction: row;
+}
+.button {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.button:hover {
+  transform: scale(1.2);
+}
+#aboutme {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bit {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#pic {
+  margin-left: 10px;
+  margin-right: 490px;
+  border-radius: 10px;
+}
+.anchor{
+  display: block;
+  visibility: hidden;
+}
+#portfolio {
+  margin-top: 200px;
+  margin-bottom: 350px;
+  display: flex;
+  flex-direction: row;
+}
+.checkout {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@keyframes DripDown {
+  0% { top: -500px; }
+  100% { top: 0px; }
+}
+@keyframes MoveUp {
+  0% { top: 1200px; }
+  100% { top: 540px; }
+}
+@keyframes MoveUp2 {
+  0% { top: 1200px; }
+  100% { top: 500px; }
+}
+@keyframes MoveUp3 {
+  0% { top: 1200px; }
+  100% { top: 400px; }
+}
